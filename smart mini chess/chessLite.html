@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="chessLite.css">
+    </head>
+    <body>
+
+        <div class="menuclose"><button id="menucloseid" onclick="menuclosefun()"></button></div>
+
+        <div class="maindot"><button id="tripledotid" onclick="menuopenfun()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+          </svg></button>
+        </div>
+        
+        <div class="menubar" id="menubarid">
+            <!--<div><button onclick="document.getElementById('profileinputid').style.display = 'block'">Profile</button></div>
+            <div><button>Sound</button></div>
+            <div><button>About</button></div> -->
+            <div><button onclick="refreshfun()">Refresh</button></div>
+            <div><button onclick="instructionfun()">Instructions</button></div>
+        </div>
+<div id="beforegameid">
+        <div>
+            <div class="mainwallpaper"><img src="https://hellofuture.orange.com/app/uploads/2018/01/Intro-HELLO-FUTURE-1920x1080_v2.gif"></div>
+            <div class="start"><button onclick="newgamefun()">New Game</button></div>
+        </div>
+        <!--
+        <div class="profileinput">
+            <input id="profileinputid" type="text" placeholder="Enter Name">
+        </div>
+        -->
+</div>
+
+        <div class="game" id="gameid">
+        <div>
+            <div class="row1">
+            <div class="box"><button onclick="box1fun()" id="one"></button></div>
+            <div class="box"><button onclick="box2fun()" id="two"></button></div>
+            <div class="box"><button onclick="box3fun()" id="thr"></button></div>
+            </div>
+            
+            <div class="row2">
+            <div class="box"><button onclick="box4fun()" id="fou"></button></div>
+            <div class="box"><button onclick="box5fun()" id="fiv"></button></div>
+            <div class="box"><button onclick="box6fun()" id="six"></button></div>
+            </div>
+            
+            <div class="row3">
+            <div class="box"><button onclick="box7fun()" id="sev"></button></div>
+            <div class="box"><button onclick="box8fun()" id="eig"></button></div>
+            <div class="box"><button onclick="box9fun()" id="nin"></button></div>
+            </div>
+        </div>
+        <div class="winanounce"><h4 id="winanounce"></h4></div>
+        <div class="nextlvlbox"><button onclick="nextlvlfun()" class="nextlevel" id="nextlvl">play next level</button></div>
+        <div class="guide" id="ml">Let's Begin man... it is your Turn</div>
+        </div>
+
+        <br>
+        <div id="inst" class="instructiontext">Rules:-><br> Move: 1) You can only move on your forward vecant positin.<br> 2) You can move diagonally only if their is a enemy in your diagonaly opposite position and you want to kill it.<br><br> Kill: You can kill your diagonally opposite enemy. <br> <br>Win: 1) You will win if any one of your soldier reach at the end (enemy's house). <br> 2) You will win if you kill all your enemies. <br> 3) You will win if you stuck the game in such way that enemy is left nothing to move.</div>
+        
+    
+
+    <script src="chessLite.js"></script>    
+    </body>
+</html>
